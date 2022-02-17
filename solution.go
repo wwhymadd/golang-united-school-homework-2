@@ -2,8 +2,6 @@ package square
 
 import "math"
 
-type CustomType = int
-
 const Pi = 3.1415
 
 var sideLen = 10.0
@@ -15,9 +13,9 @@ var sideLen = 10.0
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-//sideLen float64, sidesNum CustomType
 
-func CalcSquare(sideLen float64, sidesNum CustomType) float64 {
+
+func CalcSquare() float64 {
 	SidesCircle := Pi * sideLen * sideLen
 	SidesTriangle := (sideLen * sideLen) * math.Sqrt(3) / 4
 	SidesSquare := sideLen * sideLen
