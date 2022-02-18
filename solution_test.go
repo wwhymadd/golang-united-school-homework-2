@@ -4,9 +4,6 @@ import (
 	"testing"
 )
 
-//	expected_triangle :=19.0
-//	expected_circle := 11.0
-
 func TestCalcSquare1(t *testing.T) {
 	expected := 100.00
 	if CalcSquare1(Square, SidesSquare) != expected {
