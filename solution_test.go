@@ -4,10 +4,29 @@ import (
 	"testing"
 )
 
-func TestCalcSquare(t *testing.T) {
-	var expected = 43.30127018922193
-	if CalcSquare() != expected {
-		t.Errorf("Ошибка. Expect %v, got %v",
-			expected, CalcSquare())
+//	expected_triangle :=19.0
+//	expected_circle := 11.0
+
+func TestCalcSquare1(t *testing.T) {
+	expected := 100.00
+	if CalcSquare1(Square, SidesSquare) != expected {
+		t.Errorf("Ошибка. Expect %f, got %f",
+			expected, CalcSquare1(Square, SidesSquare))
+	}
+}
+
+func TestCalcSquare2(t *testing.T) {
+	expected := 43.250000
+	if CalcSquare2(Triangle, SidesTriangle) != expected {
+		t.Errorf("Ошибка. Expect %f, got %f",
+			expected, CalcSquare2(Triangle, SidesTriangle))
+	}
+}
+
+func TestCalcSquare3(t *testing.T) {
+	expected := 314.150000
+	if CalcSquare3(Circle, SidesCircle) != expected {
+		t.Errorf("Ошибка. Expect %f, got %f",
+			expected, CalcSquare3(Circle, SidesCircle))
 	}
 }
