@@ -16,7 +16,6 @@ const SidesSquare = 4
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-//sideLen float64, sidesNum CustomType
 
 func CalcSquare(sideLen float64, sidesNum CustomType) float64 {
 	switch sidesNum {
